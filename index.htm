@@ -9,34 +9,74 @@
     <meta name="keywords" content="story, cat">
     <title>My Hub</title>
 
-    <script type="application/ld+json">
-        {
-        "entity": "article",
-        "version": "1.0",
-        "templateVersion": "1.0",
+    <script type="application/ld+json">  
+        {    
+        "@context": "http://schema.org",
+        "@type": "ItemList",
+        "name": "Covers for my blog",
+        "itemListElement": [
+        {     
+        "@type": "ImageObject",
         "author": "http://webrunes.github.io/webRunes-WRIO-Hub/Alexey-Anshakov.html",
-        "translation": "http://domain.com/translation.html"
+        "name": "All your stuff in one place",
+        "thumbnail": "http://domain.com/image200.jpg",
+        "contentUrl": "http://webrunes.com/img/sign_in-cover1.jpg",
+        "about": "Description",
+        "text": [
+        ],
+        "mentions": [
+        {
+        "@type": "Article",   
+        "name": "First url title",
+        "about": "Text inside the ticket popup.",
+        "url": "http://webrunes.com/blog.htm?'ваших предпочтений':1,38"
+        },
+        {
+        "@type": "Article",
+        "name": "About domainname",
+        "about": "Text inside the ticket popup.",
+        "url": "http://domainname.com/url.htm?'единый каталог':3,0"
+        }
+        ]
+        }
+        ]
         }
     </script>
 
     <script type="application/ld+json">
-        {
+    {
         "@context": "http://schema.org",
         "@type": "Article",
-        "inLanguage": "en-US",
-        "keywords": "cat, story",
-        "name": "The story of the cat",
-        "about": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
+        "inLanguage": "ru",
+        "keywords": "webRunes",
+        "name": "webRunes",
+        "about": "My blog",
         "articleBody": [
-        "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-        "Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum."
+        "Some text goes here"
+        ],
+        "hasPart": [
+        {
+        "@type": "Article",
+        "name": "Chapter 1",
+        "articleBody": [
+        "Text bla-bla-bla"
+        ]
+        },
+        {
+        "@type": "Article",
+        "name": "Chapter 2",
+        "articleBody": [
+        "Text bla-bla-bla"
         ]
         }
+        ],
+        "mentions": [
+        ]
+    }
     </script>
 </head>
 
 <body>
-    <script src="http://wrio.s3-website-us-east-1.amazonaws.com/WRIO-InternetOS/main.js"></script>
+    <script type="text/javascript" data-main="http://wrio.s3-website-us-east-1.amazonaws.com/WRIO-InternetOS/main.js" src="http://wrio.s3-website-us-east-1.amazonaws.com/WRIO-InternetOS/require.js"></script>
 </body>
 </html>
