@@ -1,79 +1,128 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.">
-    <meta name="author" content="Vasya Pupkin">
+    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.">
+    <meta name="author" content="User name1, User name2">
     <meta name="keywords" content="story, cat">
-    <title>My Hub</title>
+    <title>Alexey Anshakov</title>
 
-    <script type="application/ld+json">  
-        {    
-        "@context": "http://schema.org",
+    <!-- json-ld for cover -->
+    <script type="application/ld+json">
+        {
+        "entity": "Profile",
+        "version": "1.0",
+        "templateVersion": "1.0",
+        "cover": "http://domain.com/cover.html",
+        "translation": "http://domain.com/translation.html",
+        "list": [
+        {
         "@type": "ItemList",
-        "name": "Covers for my blog",
-        "itemListElement": [
-        {     
-        "@type": "ImageObject",
-        "author": "http://webrunes.github.io/webRunes-WRIO-Hub/Alexey-Anshakov.html",
-        "name": "All your stuff in one place",
-        "thumbnail": "http://domain.com/image200.jpg",
-        "contentUrl": "http://webrunes.com/img/sign_in-cover1.jpg",
-        "about": "Description",
-        "text": [
+        "name": "List name 1",
+        "url": "http://domain.com/List-name-1.html"
+        },
+        {
+        "@type": "ItemList",
+        "name": "List name 2",
+        "url": "http://domain.com/List-name-2.html"
+        }
+        ]
+        }
+    </script>
+
+    <!-- json-ld for article -->
+    <script type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "inLanguage": "en-US",
+        "keywords": "keyword1, keyword2, keyword3",
+        "author": "http://aa.wr.io",
+        "editor": "",
+        "name": "Alexey Anshakov",
+        "about": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
+        "articleBody": [
+        "I was born 1979-09-10. Has a friend Friend Name here sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+        "Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum."
         ],
         "mentions": [
         {
-        "@type": "Article",   
-        "name": "First url title",
-        "about": "Text inside the ticket popup.",
-        "url": "http://webrunes.com/blog.htm?'ваших предпочтений':1,38"
+        "@type": "Article",
+        "name": "Alexey Anshakov",
+        "about": "Alexey Anshakov's profile page.",
+        "url": "http://aa.wr.io/index.htm?'Alexey':1,0&givenName"
         },
         {
         "@type": "Article",
-        "name": "About domainname",
-        "about": "Text inside the ticket popup.",
-        "url": "http://domainname.com/url.htm?'единый каталог':3,0"
+        "name": "Alexey Anshakov",
+        "about": "Alexey Anshakov's profile page.",
+        "url": "http://aa.wr.io/index.htm?'Anshakov':1,7&familyName"
+        },
+        {
+        "@type": "Article",
+        "name": "Alexey Anshakov",
+        "about": "Alexey Anshakov's profile page.",
+        "url": "http://aa.wr.io/index.htm?'1979-09-10':3,11&birthDate"
+        },
+        {
+        "@type": "Article",
+        "name": "Friend Name",
+        "about": "Friend Name's profile page.",
+        "url": "http://friend_name.com/page.htm?'Friend':3,36&givenName"
+        },
+        {
+        "@type": "Article",
+        "name": "Friend Name",
+        "about": "Friend Name's profile page.",
+        "url": "http://friend_name.com/page.htm?'Name':3,43&familyName"
         }
+        ],
+        "hasPart": [
+        {
+        "@type": "Article",
+        "name": "Personal information",
+        "articleBody": [
+        "Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam."
+        ]
+        },
+        {
+        "@type": "Article",
+        "name": "Contacts",
+        "url": "domainname.com/hash.html"
+        },
+        {
+        "@type": "Article",
+        "name": "Skills",
+        "articleBody": [
+        "Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam.",
+        "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Quisque volutpat condimentum velit."
+        ]
+        },
+        {
+        "@type": "Article",
+        "name": "Experience",
+        "articleBody": [
+        "Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu."
         ]
         }
         ]
         }
     </script>
 
+    <!-- json-ld for facts -->
     <script type="application/ld+json">
-    {
+        {
         "@context": "http://schema.org",
-        "@type": "Article",
-        "inLanguage": "ru",
-        "keywords": "webRunes",
-        "name": "webRunes",
-        "about": "My blog",
-        "articleBody": [
-        "Some text goes here"
-        ],
-        "hasPart": [
-        {
-        "@type": "Article",
-        "name": "Chapter 1",
-        "articleBody": [
-        "Text bla-bla-bla"
-        ]
-        },
-        {
-        "@type": "Article",
-        "name": "Chapter 2",
-        "articleBody": [
-        "Text bla-bla-bla"
-        ]
+        "@type": "Person",
+        "image": "http://webrunes.com/image.jpg",
+        "givenName": "Alexey",
+        "familyName": "Anshakov",
+        "url": "http://webrunes.com/AlexeyAnshakov",
+        "birthDate": "1979-09-10"
         }
-        ],
-        "mentions": [
-        ],
-        "comment": "598229121001459713"
-    }
     </script>
 </head>
 
